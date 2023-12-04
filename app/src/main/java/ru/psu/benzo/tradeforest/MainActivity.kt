@@ -29,27 +29,27 @@ class MainActivity : AppCompatActivity() {
 
 
 
-//        binding.textViewOutput.text = getString(R.string._initial_output)
+        binding.textViewOutput.text = getString(R.string._initial_output)
 
-//        binding.buttonPlus.setOnLongClickListener {
-//            val intent = Intent(this,MainActivity2::class.java).apply {
-//                putExtra("MY_PARAM1", "1234567890") }
-//            startActivity(intent)
-//            return@setOnLongClickListener true
-//        }
-//
-//        var resultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){ result ->
-//            if (result.resultCode == Activity.RESULT_OK){
-//                val data: Intent? = result.data
-//                //doSomeOperations()
-//            }
-//        }
-//
-//        binding.buttonMinus.setOnLongClickListener {
-//            val intent = Intent(this,MainActivity3::class.java)
-//            resultLauncher.launch(intent)
-//            return@setOnLongClickListener true
-//        }
+        binding.buttonPlus.setOnLongClickListener {
+            val intent = Intent(this,MainActivity2::class.java).apply {
+                putExtra("MY_PARAM1", "1234567890") }
+            startActivity(intent)
+            return@setOnLongClickListener true
+        }
+
+        var resultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){ result ->
+            if (result.resultCode == Activity.RESULT_OK){
+                val data: Intent? = result.data
+                //doSomeOperations()
+            }
+        }
+
+        binding.buttonMinus.setOnLongClickListener {
+            val intent = Intent(this,MainActivity3::class.java)
+            resultLauncher.launch(intent)
+            return@setOnLongClickListener true
+        }
 
 
 
