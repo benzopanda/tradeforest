@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Торги Древесина</string>
+    <string name="plus">Сложить</string>
+    <string name="minus">Вычесть</string>
+    <string name="ply">Умножить</string>
+    <string name="div">Вычесть</string>
+    <string name="_initial_output">Результат будет здесь</string>
+    <string name="label">Первое число</string>
+    <string name="label2">Второе число</string>
+    <string name="settings">Настройки</string>
+    <string name="help">Помощь</string>
+</resources>

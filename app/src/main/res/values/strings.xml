@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Trade Forest</string>
+    <string name="plus">Plus</string>
+    <string name="minus">Min</string>
+    <string name="div">Div</string>
+    <string name="ply">Mltp</string>
+    <string name="_initial_output">Output will be here.</string>
+    <string name="label">1 Number</string>
+    <string name="label2">2 Number</string>
+    <string name="settings">Settings</string>
+    <string name="help">Help</string>
+</resources>
