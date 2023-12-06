@@ -8,21 +8,20 @@ import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
-import android.widget.EditText
-import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts
-import ru.psu.benzo.tradeforest.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
+import ru.psu.benzo.tradeforest.databinding.CalcActivityBinding
+
+class CalcActivity : AppCompatActivity() {
     private lateinit var resultLauncher: ActivityResultLauncher<Intent>
 
-    private lateinit var binding : ActivityMainBinding
+    private lateinit var binding : CalcActivityBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = CalcActivityBinding.inflate(layoutInflater)
         setContentView(binding.root)
         // The Toolbar defined in the layout has the id "my_toolbar".
         setSupportActionBar(binding.myToolbar)
