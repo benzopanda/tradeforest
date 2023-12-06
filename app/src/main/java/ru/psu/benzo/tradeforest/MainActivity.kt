@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(binding.myToolbar)
 
 
-
         binding.textViewOutput.text = getString(R.string._initial_output)
 
         binding.buttonPlus.setOnLongClickListener {
@@ -40,13 +39,14 @@ class MainActivity : AppCompatActivity() {
 
         var resultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){ result ->
             if (result.resultCode == Activity.RESULT_OK){
-                val data: Intent? = result.data
-                //doSomeOperations()
+                val data = result.data?.extras
+                Toast.makeText(this, "Data received", Toast.LENGTH_LONG).show()
             }
         }
 
         binding.buttonMinus.setOnLongClickListener {
-            val intent = Intent(this,MainActivity3::class.java)
+            val intent = Intent(this,MainActivity3::class.java).apply {
+                putExtra("MY_PARAM2", "0987654321") }
             resultLauncher.launch(intent)
             return@setOnLongClickListener true
         }
